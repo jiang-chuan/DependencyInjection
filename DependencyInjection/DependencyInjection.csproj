@@ -7,4 +7,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="microsoft.extensions.dependencyinjection" Version="8.0.0" />
+    <PackageReference Include="microsoft.extensions.hosting" Version="8.0.0" />
+    <PackageReference Include="microsoft.extensions.logging" Version="8.0.0" />
+    <PackageReference Include="nlog" Version="5.3.2" />
+    <PackageReference Include="nlog.extensions.logging" Version="5.3.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
