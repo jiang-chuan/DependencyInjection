@@ -20,7 +20,10 @@ namespace DependencyInjection
 
             var productService = host.Services.GetRequiredService<IProductService>();
 
-            productService.GetProduct();
+            productService.GetProductList();
+            productService.GetProductById(1);
+            productService.GetProductById(2);
+            productService.GetProductById(3);
 
             host.Run();
         }

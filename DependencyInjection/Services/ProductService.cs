@@ -18,10 +18,16 @@ namespace DependencyInjection.Services
             _logger = Logger;
         }
 
-        public void GetProduct()
+        public void GetProductById(int id)
         {
-            _logger.Log(LogLevel.Information, "calling IProductRepository.IProductRepository()");
-            _productRepository.GetProduct();
+            _logger.Log(LogLevel.Information, "calling IProductRepository.GetProductById()");
+            _productRepository.GetProductById(id);
+        }
+
+        public void GetProductList()
+        {
+            _logger.Log(LogLevel.Information, "calling IProductRepository.GetProductList()");
+            _productRepository.GetProductList();
         }
     }
 }

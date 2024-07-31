@@ -8,6 +8,8 @@ namespace DependencyInjection.Services
 {
     internal interface IProductRepository
     {
-        public void GetProduct();
+        public void GetProductList();
+
+        public void GetProductById(int id);
     }
 }
