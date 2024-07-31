@@ -16,9 +16,14 @@ namespace DependencyInjection.Services
             _logger = Logger;
         }
 
-        public void GetProduct()
+        public void GetProductById(int id)
         {
-            _logger.Log(LogLevel.Information, "fetch product from the db");
+            _logger.Log(LogLevel.Information, $"fetch product {id} from the db");
+        }
+
+        public void GetProductList()
+        {
+            _logger.Log(LogLevel.Information, "fetch product list from the db");
         }
     }
 }
